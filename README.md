@@ -91,3 +91,29 @@ class User extends CI_Model
 
 }
 ```
+
+HTML list users
+
+```
+<div class="container mt-5">
+    <h1>Users</h1>
+    <table class="table table-sm table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach($users as $user){ ?>
+                <tr>
+                    <td><?php echo $user->name; ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+    <div class="justify-conteny-center">
+        <?php echo $links; ?>
+    </div>
+
+</div>
+```
