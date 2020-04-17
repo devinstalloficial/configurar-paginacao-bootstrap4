@@ -35,7 +35,7 @@ function configPagination($base_url, $total_rows, $per_page, $uri_segment)
 User Controller
 
 ```
-class User extends CI_Controller {
+class UserController extends CI_Controller {
 
 	function configPagination($base_url, $total_rows, $per_page, $uri_segment){}
 
@@ -60,5 +60,34 @@ class User extends CI_Controller {
 		
 	}
     
+}
+```
+
+Model User
+
+```
+class User extends CI_Model
+{
+
+    private static $Table = "user";
+
+    function getTableName()
+    {
+        return self::$Table;
+    }
+
+    function getAll($limit, $start)
+    {
+        return $this->db
+            ->limit($limit, $start)
+            ->get($this->getTableName())
+            ->result();
+    }
+
+    function countAll()
+    {
+        return $this->db->count_all($this->getTableName());
+    }
+
 }
 ```
