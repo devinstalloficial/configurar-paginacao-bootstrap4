@@ -39,7 +39,7 @@ class UserController extends CI_Controller {
 	function users()
 	{
 
-		$base_url = base_url() . "UserController";
+		$base_url = base_url() . "UserController/users";
 		$total_rows = $this->user->countAll();
 		$per_page = 10;
 		$uri_segment = 2;
