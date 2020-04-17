@@ -64,8 +64,7 @@ class UserController extends CI_Controller {
 
 ### Model User
 
-```
-
+```PHP
 <?php
 
 class User extends CI_Model
@@ -96,7 +95,7 @@ class User extends CI_Model
 
 ### View list users
 
-```
+```PHP
 <div class="container mt-5">
     <h1>Users</h1>
     <table class="table table-sm table-striped">
