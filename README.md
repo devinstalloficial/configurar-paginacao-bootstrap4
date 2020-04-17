@@ -1,4 +1,4 @@
-# config-links-pagination-bootstrap4
+# configurar-paginacao-bootstrap4
 
 Portuguese
 
