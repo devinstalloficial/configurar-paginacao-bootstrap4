@@ -100,8 +100,8 @@ class User extends CI_Model
 
 }
 ```
-
-### View list users
+### View lista de usuários
+### View user list
 
 ```PHP
 <div class="container mt-5">
