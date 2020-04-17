@@ -1,9 +1,9 @@
 # config-links-pagination-bootstrap4
 
-Português.
+*Português.
 Como configurar paginação com bootstrap 4 no codeigniter.
 
-English.
+*English.
 How to configure pagination with bootstrap 4 in codeigniter.
 
 ### User Controller
