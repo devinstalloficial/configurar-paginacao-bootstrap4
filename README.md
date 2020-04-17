@@ -1,6 +1,6 @@
 # config-links-pagination-bootstrap4
 
-User Controller
+### User Controller
 
 ```
 <?php
@@ -62,7 +62,7 @@ class UserController extends CI_Controller {
 }
 ```
 
-Model User
+### Model User
 
 ```
 
@@ -94,7 +94,7 @@ class User extends CI_Model
 }
 ```
 
-HTML list users
+### View list users
 
 ```
 <div class="container mt-5">
