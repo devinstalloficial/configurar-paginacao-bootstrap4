@@ -37,6 +37,8 @@ User Controller
 ```
 class User extends CI_Controller {
 
+	function configPagination($base_url, $total_rows, $per_page, $uri_segment){}
+
 	function users()
 	{
 
