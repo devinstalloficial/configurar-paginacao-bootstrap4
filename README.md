@@ -2,7 +2,7 @@
 
 ### User Controller
 
-```
+```PHP
 <?php
 
 class UserController extends CI_Controller {
