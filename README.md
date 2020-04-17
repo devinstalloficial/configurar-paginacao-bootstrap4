@@ -3,6 +3,8 @@
 User Controller
 
 ```
+<?php
+
 class UserController extends CI_Controller {
 
 	function configPagination($base_url, $total_rows, $per_page, $uri_segment)
@@ -63,6 +65,9 @@ class UserController extends CI_Controller {
 Model User
 
 ```
+
+<?php
+
 class User extends CI_Model
 {
 
