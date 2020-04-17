@@ -1,5 +1,10 @@
 # config-links-pagination-bootstrap4
 
+Português
+Como configurar paginação com bootstrap 4 no codeigniter
+English
+How to configure pagination with bootstrap 4 in codeigniter
+
 ### User Controller
 
 ```PHP
