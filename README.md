@@ -48,6 +48,10 @@ class UserController extends CI_Controller {
 
 	function users()
 	{
+	
+		$this->load->model("user");
+		$this->load->helper("url");
+		$this->load->library("pagination");
 
 		$base_url = base_url() . "UserController/users";
 		$total_rows = $this->user->countAll();
