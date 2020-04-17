@@ -1,6 +1,33 @@
 # config-links-pagination-bootstrap4
 
 ```
+class User extends CI_Controller {
+
+	function users()
+	{
+
+		$base_url = base_url() . "user";
+		$total_rows = $this->user->countAll();
+		$per_page = 10;
+		$uri_segment = 2;
+
+		$config = $this->configPagination($base_url, $total_rows, $per_page, $uri_segment);
+       
+        $this->pagination->initialize($config);
+
+        $page = $this->uri->segment(2) ? $this->uri->segment(2) : 0;
+
+		$data["users"] = $this->user->getAll($config["per_page"], $page);
+        $data["links"] = $this->pagination->create_links();
+
+		$this->load->view("user/index", $data);
+		
+	}
+    
+}
+```
+
+```
 function configPagination($base_url, $total_rows, $per_page, $uri_segment)
   {
       return array(
