@@ -37,24 +37,24 @@ Controller User
 ```
 class User extends CI_Controller {
 
-function users()
-{
+	function users()
+	{
 
-	$base_url = base_url() . "user";
-	$total_rows = $this->user->countAll();
-	$per_page = 10;
-	$uri_segment = 2;
+		$base_url = base_url() . "user";
+		$total_rows = $this->user->countAll();
+		$per_page = 10;
+		$uri_segment = 2;
 
-	$config = $this->configPagination($base_url, $total_rows, $per_page, $uri_segment);
-       
-        $this->pagination->initialize($config);
+		$config = $this->configPagination($base_url, $total_rows, $per_page, $uri_segment);
 
-        $page = $this->uri->segment(2) ? $this->uri->segment(2) : 0;
+		$this->pagination->initialize($config);
 
-	$data["users"] = $this->user->getAll($config["per_page"], $page);
-        $data["links"] = $this->pagination->create_links();
+		$page = $this->uri->segment(2) ? $this->uri->segment(2) : 0;
 
-	$this->load->view("user/index", $data);
+		$data["users"] = $this->user->getAll($config["per_page"], $page);
+		$data["links"] = $this->pagination->create_links();
+
+		$this->load->view("user/index", $data);
 		
 	}
     
