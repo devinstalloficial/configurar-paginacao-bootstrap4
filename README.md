@@ -32,7 +32,7 @@ function configPagination($base_url, $total_rows, $per_page, $uri_segment)
   }
 ```
 
-Controller User
+User Controller
 
 ```
 class User extends CI_Controller {
