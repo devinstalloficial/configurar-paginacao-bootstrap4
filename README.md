@@ -8,7 +8,7 @@ English
 
 How to configure pagination with bootstrap 4 in codeigniter.
 
-### User Controller
+### Controller
 
 ```PHP
 <?php
@@ -74,7 +74,7 @@ class UserController extends CI_Controller {
 }
 ```
 
-### Model User
+### Model
 
 ```PHP
 <?php
